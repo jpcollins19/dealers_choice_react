@@ -1,6 +1,3 @@
-//how to make it so the curser is an arrow when you click on a team name.  Currently set as a text curser.
-//couldnt figure out how to add a player to the player model, any insight would be appreciated for this one!
-
 const express = require("express");
 const app = express();
 const { syncAndSeed } = require("./db/postgres_info.js");

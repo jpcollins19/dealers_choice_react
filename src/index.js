@@ -24,9 +24,10 @@ class Main extends React.Component {
 
   async componentDidMount() {
     try {
-      const leagues = (await axios.get("./api/leagues")).data;
-      const teams = (await axios.get("./api/teams")).data;
-      this.setState({ leagues, teams });
+      this.setState({
+        leagues: (await axios.get("./api/leagues")).data,
+        teams: (await axios.get("./api/teams")).data,
+      });
     } catch (err) {
       console.log(err);
     }
